@@ -1,11 +1,11 @@
-import type { AppDispatch, RootState } from "../stores/store";
+import type { AppDispatch, RootState } from "../redux/store";
 import { useDispatch, useSelector } from "react-redux";
 import {
   decrement,
   increment,
   incrementByAmount,
   incrementAsync,
-} from "../stores/counter/counterSlice";
+} from "../redux/features/counter/counterSlice";
 import { useState } from "react";
 
 function Counter() {
